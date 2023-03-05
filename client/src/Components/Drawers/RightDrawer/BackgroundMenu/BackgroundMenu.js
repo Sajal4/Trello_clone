@@ -52,12 +52,12 @@ const PhotosMenu = (props) => {
 								<Image key={image.id} link={image.urls.small} />
 							</PhotosWrapper>
 						);
-				  })
+					})
 				: [...Array(18).keys()].map((l, i) => (
 						<PhotosWrapper key={i}>
 							<Skeleton variant='rectangular' width='100%' height='6rem' />
 						</PhotosWrapper>
-				  ))}
+					))}
 		</PhotosContainer>
 	);
 };

@@ -105,7 +105,7 @@ const Card = (props) => {
 													card.date.completed
 														? '#61bd4f'
 														: moment(card.date.dueDate).toDate().getTime() <
-														  new Date().getTime()
+															new Date().getTime()
 														? '#ec9488'
 														: 'transparent'
 												}
@@ -113,7 +113,7 @@ const Card = (props) => {
 													card.date.completed
 														? '#81dd6f'
 														: moment(card.date.dueDate).toDate().getTime() <
-														  new Date().getTime()
+															new Date().getTime()
 														? '#eb5a46'
 														: 'lightgray'
 												}
